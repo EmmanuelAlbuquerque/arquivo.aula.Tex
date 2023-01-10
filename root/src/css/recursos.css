@@ -1,0 +1,45 @@
+.boxpadrao{
+    padding: 3%;
+    width: 50%;
+    margin: 10vh auto;
+    border-radius: 12px;
+}
+.bordapadrao{
+    border: 5px solid #eee;
+}
+.sombrapadrao{
+    box-shadow: 10px 10px 2px #eee;
+}
+.labelpadrao{
+    font-size: 1.5rem;
+
+}
+.mtb-1{
+    margin: 0.7rem 0;
+}
+.p-1{
+    padding: 0.4rem;
+}
+.textcenter{
+    text-align: center;
+}
+.inputpadrao{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.btnpadrao{
+    box-shadow: inset -3px -3px 3px rgba(72, 56, 232, 0.3);
+    color: #eee;
+}
+.btn{
+    padding: 2px;
+    background-color: rgba(199, 148, 154, 0.7);
+    border: none;
+    border-radius:  12px;
+    display:inline-block;
+    cursor: pointer;
+}
+.bgpadrao{
+    background-color: royalblue;
+}

@@ -1,0 +1,25 @@
+/* body */
+body {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+/*HEADER*/
+header {
+  padding: 1%;
+}
+
+.logo {
+  background-image: url(/root/images/bg_500.jpg);
+}
+
+/*NAVBAR*/
+.navbar {
+  text-align: center;
+}
+
+.navbar-item {
+  font: bold 1rem "Arial Black";
+}
+
+/*# sourceMappingURL=page.css.map */

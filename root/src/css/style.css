@@ -1,0 +1,339 @@
+@keyframes fruta {
+  0% {
+    transform: rotate(0deg) scale(0.2);
+  }
+  100% {
+    transform: rotate(20deg) scale(1);
+  }
+}
+@keyframes peixe {
+  0% {
+    left: -30%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+
+/* logo */
+.logo {
+  width: 45vw;
+  min-width: 350px;
+  text-align: center;
+  margin-bottom: 12px;
+  padding: 0.5rem;
+  background-color: black;
+  color: antiquewhite;
+  border-radius: 20px 0 20px 0;
+}
+.logo span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 75%;
+  letter-spacing: 0.3rem;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+.logo img {
+  width: 14%;
+  vertical-align: middle;
+}
+body {
+  width: 80%;
+  margin: auto;
+  font-size: 1.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 1.3rem;
+  border: 1px dashed rgb(255, 5, 5);
+  padding: 10px;
+  background-image: url(../../images/bg_500.jpg);
+}
+figure {
+  padding: 10px;
+}
+header * {
+  font-size: 2rem;
+  font-weight: 700;
+}
+audio {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#formreserva{
+  margin: 80px auto;
+}
+#formreserva ul{ 
+  list-style: none;
+}
+datalist,textarea,input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=date]):not([type=image]){
+  width: 90%;
+  padding: 2%;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 5px 5px 3px red;
+}
+textarea:focus,input:focus{
+  outline: none;
+}
+label{
+  display: block;
+  margin: 10px 0;
+  padding: 0 0 0 10px;
+}
+fieldset{
+  border: 1px dashed white;
+}
+legend{
+  text-align: center;
+  padding: 0 10px;
+}
+select {
+  font-size: 0.88rem;
+}
+/* header */
+header span + img {
+  filter: invert(100);
+}
+.slogan {
+  background-color: antiquewhite;
+  color: rgb(0, 0, 0);
+  padding: 0 0 10px 0;
+}
+.slogan p {
+  padding: 0 1.5rem 0 0;
+}
+
+#pratos {
+  color: rgb(0, 0, 0);
+}
+#pratos table td p {
+  color: black;
+}
+.navpos {
+  background-color: rgb(48, 70, 70);
+  width: 3vw;
+  height: 150px;
+  position: fixed;
+  right: 0;
+  top: 40vh;
+  padding: 0 1vw 0 1vw;
+  border-radius: 20px 0 0 20px;
+}
+.navpos ul {
+  padding: 0;
+  list-style: none;
+}
+.navpos ul li {
+  margin: 0 0 10px 0;
+  text-align: left;
+  padding: 0 0 0 10px;
+}
+.navpos ul li a {
+  font-size: 0.6em;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  margin: 10px 0 10px 0;
+}
+nav ul li {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.nav1 ul {
+  background-color: black;
+}
+.nav1 {
+  position: sticky;
+  top: 0;
+}
+.nav1 ul li a {
+  display: inline-block;
+  margin: 0 5px 0 0;
+  text-decoration: none;
+  background-color: black;
+  color: antiquewhite;
+  padding: 20px 22px 12px 22px;
+}
+.nav1 a:hover {
+  text-decoration: underline white;
+  color: blueviolet;
+}
+p {
+  text-align: justify;
+  text-indent: 1.3rem;
+  text-align-last: right;
+  letter-spacing: 0.03rem;
+  word-spacing: 0.03rem;
+  line-height: 1.4rem;
+  word-spacing: wrap;
+}
+p::first-letter {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+.h2color {
+  color: rgb(0, 0, 0);
+  text-align: right;
+  margin: 0 0 10px 0;
+}
+.container01 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.container02 {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.container02 div {
+  padding: 2%;
+}
+.container02 div img {
+  opacity: 0.4;
+  transition: all 0.6s;
+}
+.container02 div img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.container02 div p {
+  text-align: left;
+  line-height: normal;
+  word-spacing: normal;
+}
+.container02 div:hover p {
+  color: black !important;
+}
+.container02 p::first-letter {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+h2 + span {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: brown;
+  font-weight: 700;
+  display: block;
+  text-align: right;
+}
+.listainfo {
+  list-style-image: url(../../images/png/garfo-e-faca-em-cruz.png);
+}
+.listainfo li {
+  padding: 0 0 0 10px;
+}
+article footer {
+  min-height: 100vh;
+  padding: 80px 1% 0 1%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+table{
+  border: 1px solid rgb(70, 69, 69);
+  width: 90%;
+  margin: 80px auto;
+  border-collapse: collapse;
+  border-bottom-width: 4px;
+}
+table th{
+  text-align: left;
+}
+table td,table th{ 
+  border: 1px solid black;
+  padding: 1%;
+}
+table tr:nth-child(even){
+  background-color: blueviolet;
+  font-weight: bold;
+}
+table tr:nth-of-type(2){
+  background-color: rgb(131, 131, 131);
+  color: rgb(255, 255, 255);
+}
+
+.navup {
+  text-align: right;
+}
+.navup i {
+  color: blueviolet;
+  cursor: pointer;
+}
+#pratos p:active ~ table {
+  border: dashed 2px green;
+}
+#pratos p:active {
+  color: blueviolet;
+}
+/* forms */
+#frutos-mar {
+  background-image: url(../../images/download.jpeg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+#frutos-mar span {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  font-size: 5rem;
+  color: antiquewhite;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 5rem;
+  text-shadow: 2px 2px 3px red;
+  z-index: 2;
+}
+#frutos-mar .fruta {
+  width: 10%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: scale(0.2);
+  animation: fruta 3s forwards;
+  animation-delay: 2s;
+  z-index: 1;
+}
+#frutos-mar .peixe {
+  width: 25%;
+  position: absolute;
+  left: -30%;
+  animation: peixe 6s forwards;
+  animation-delay: 2s;
+}
+#imgfooter div span{
+  position: absolute;
+  display: block;
+  width: 50%;
+  top: 50%;
+  background-color: rgba(255, 0, 0, 0.8);
+  text-align: center;
+
+}
+#imgfooter div{
+  background-size: cover;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 30%;
+  border: 3px dashed white;
+  margin: 80px auto;
+  position: relative;
+}
+#imgfooter div:nth-of-type(1) {
+  background-image: url(../../images/coxinha-brasileira.jpg);
+  box-shadow: 10px 12px 5px rgb(255, 0, 0);
+}
+#imgfooter div:nth-of-type(2) {
+  background-image: url(../../images/frutas-e-vegetais.jpg);
+  box-shadow: -10px -12px 5px rgb(255, 0, 0);
+}
+input[type="radio"] {
+  accent-color: green;
+}
+textarea {
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px;
+}

@@ -1,0 +1,25 @@
+@use"b" as v;
+// @import "b";
+@use"recursos" with(
+    $black:#999,
+    $bordapadrao:1rem
+);
+$cor1:red;
+$cor2:black;
+$cor3:blue;
+$bg1:#fff;
+
+/*ola*/
+body{
+    $bg1:$cor1 !global;
+    background-color: $bg1;
+}
+p{
+    color:$bg1;
+    margin:v.$m1;
+}
+ul{
+    li{
+        color: $cor3;
+    }
+}

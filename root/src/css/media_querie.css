@@ -1,0 +1,148 @@
+* {
+  font-size: calc(0.5rem + 1vw);
+}
+body,
+section,
+article {
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+nav {
+  background-color: bisque;
+  padding: 5px 0;
+  margin: 20px 0;
+}
+nav ul {
+  /* list-style: none; */
+  list-style-type: style none;
+}
+nav ul li {
+  display: inline-block;
+}
+footer {
+  background-color: aqua;
+  padding: 1%;
+}
+footer div {
+  margin: 20px 0;
+}
+aside {
+  position: absolute;
+  right: -20vw;
+  border-radius: 50%;
+  width: 50%;
+  height: 40vw;
+  background-color: cornflowerblue;
+  color: antiquewhite;
+  bottom: 10%;
+}
+.divulga {
+  position: absolute;
+  top: 20%;
+  left: 14%;
+  width: 20vw;
+}
+.divulga div {
+  margin-bottom: 20px;
+}
+.logo {
+  width: 40%;
+}
+.logo img {
+  width: 30%;
+  vertical-align: middle;
+  filter: invert(100);
+}
+.logo span {
+  background-color: brown;
+  color: aliceblue;
+  padding: 0.5rem;
+  border-radius: 0 22px 22px 0;
+}
+.box01 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
+}
+.box01 img {
+  width: 100%;
+}
+.box01 div {
+  width: 30%;
+}
+.btn {
+  border: none;
+  padding: 15px 2vw;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+.btn-info {
+  background-color: blue;
+  color: beige;
+  margin: 20px 1.8vw;
+}
+.btn-sucess {
+  background-color: brown;
+  margin: 20px 0;
+  color: white;
+}
+.hb {
+  display: none;
+}
+@media (max-width: 415px) and (orientation: portrait) {
+  aside {
+    display: none;
+  }
+  .logo span {
+    display: block;
+  }
+  .logo img {
+    width: 50%;
+  }
+  .hb {
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+    display: block;
+  }
+  .box01 {
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .box01 div {
+    width: 80%;
+  }
+  nav ul {
+    display: none;
+  }
+}
+@media (max-width: 916px) and (orientation: landscape) {
+  .divulga div {
+    color: blueviolet;
+  }
+}
+/* 
+Media Querie Option
+//Smartphones - Retrato
+@media (max-width: 415px) and (orientation: portrait){...}
+
+//Smartphones - Paissagem
+@media (max-width: 916px) and (orientation: landscape){...}
+
+//Smartphones/Tabletes - Retrato
+@media (max-width: 415px) and (orientation: portrait), (max-width:1025px) and (min-height:1023px) and (orientation: portrait){...}
+
+/Tabletes - Retrato
+@media (max-width:1025px) and (min-height:1023px) and (orientation: portrait){...}
+
+//Tabletes - Paissagem
+@media (max-width: 1195px) and (orientation: landscape), (max-width:1367px) and (min-height:1023px) and (orientation: landscape){...}
+*/

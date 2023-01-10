@@ -1,0 +1,87 @@
+section {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+.icone-facebbok {
+  background-image: url(/root/images/png/facebbok.png);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.boxanima {
+  animation-name: anima-u9v3czw;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes nome {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.boxanima,
+.alert {
+  border: 1px solid black;
+}
+.boxanima p background,
+.boxanima a background,
+.alert p background,
+.alert a background {
+  color: #54a021;
+}
+
+h2 + span {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+div ~ ul {
+  list-style: none;
+}
+
+.button {
+  background-color: blue;
+}
+
+.alert {
+  color: rgba(56, 0, 102, 0.6);
+  border-color: #66ffff;
+}
+
+.box {
+  color: #999;
+  border-radius: 1rem;
+  box-shadow: 1rem 0.57rem 1rem rgba(153, 153, 153, 0.3);
+}
+
+/*ola*/
+body {
+  background-color: red;
+}
+
+p {
+  color: red;
+  margin: 0;
+}
+
+ul li {
+  color: blue;
+}
+
+/*# sourceMappingURL=a.css.map */

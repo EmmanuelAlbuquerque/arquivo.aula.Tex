@@ -1,0 +1,106 @@
+@use "sass:map";
+$black: #000 !default;
+$bordapadrao: 12px !default;
+$sobrapadrao: 1rem 0.57rem 1rem rgba($black, 0.3) !default;
+///////
+///
+@mixin lista-reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+@mixin lista-horizontal {
+  @include lista-reset;
+
+  li {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}
+nav ul {
+  @include lista-horizontal;
+}
+
+@mixin icone-position($img, $top-bottom, $left-right) {
+  .icone-#{$img} {
+    background-image: url(/root/images/png/#{$img}.png);
+    position: absolute;
+    #{$top-bottom}: 0;
+    #{$left-right}: 0;
+  }
+}
+@include icone-position("facebbok", top, right);
+
+$temaAlerta: (
+  "sucesso": #54a021,
+  "info": blue,
+  "alerta": orange,
+);
+
+@mixin anima($dur, $cont) {
+  $nome: anima-#{unique-id()};
+
+  @keyframes #{nome} {
+    @content;
+  }
+  animation-name: $nome;
+  animation-duration: $dur;
+  animation-iteration-count: $cont;
+}
+
+.boxanima {
+  @include anima(2s, infinite) {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.5);
+    }
+  }
+}
+.boxanima,
+.alert {
+  border: 1px solid black;
+  p,
+  a {
+    background {
+      color: #54a021;
+    }
+  }
+}
+h2 + {
+  span {
+    font: {
+      weight: bold;
+      size: 2rem;
+    }
+  }
+}
+div ~ {
+  ul {
+    list-style: none;
+  }
+}
+
+$temaEscuro: true !default;
+$corprimaria: rgba(140, 0, 255, 0.6);
+$corbordaprimaria: rgb(0, 255, 255);
+
+@if (temaescuro) {
+  $corprimaria: darken($corprimaria, 30%);
+  $corbordaprimaria: lighten($corbordaprimaria, 20%);
+}
+
+.button {
+  background-color: map-get($temaAlerta, "info");
+}
+.alert {
+  color: $corprimaria;
+  border-color: $corbordaprimaria;
+}
+.box {
+  color: $black;
+  border-radius: $bordapadrao;
+  box-shadow: $sobrapadrao;
+}

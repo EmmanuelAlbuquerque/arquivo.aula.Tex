@@ -1,0 +1,37 @@
+body {
+  counter-reset: count-01;
+}
+
+ul {
+  list-style: none;
+}
+li.lista01::before {
+  content: ">";
+}
+li.lista01::after {
+  content: "__";
+}
+li.lista02::before {
+  counter-increment: count-01;
+  content: counter(count-01);
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  font-size: 0.7rem;
+  text-align: center;
+  color: white;
+  background-color: blueviolet;
+  border-radius: 50px;
+}
+li.lista02 span {
+  padding: 0 0 0 2%;
+  color: darkgreen;
+}
+#box-01 h2{
+    counter-reset: count-h2;
+}
+h2::before{
+    counter-increment: count-h2;
+    content: counters(count-h2, ".") ":";
+}
+
